@@ -1,0 +1,201 @@
+.dot {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%; 
+  fill: url(#grad1);
+  text-align: center;
+  z-index: 2;
+  cursor: pointer;
+}
+.dot:hover {
+  box-shadow: 0px 0px 100px 100px #adbed9;
+}
+.MuiButton-root {
+  margin-top: 10px;
+}
+.buttonDot {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #ba4343;
+  position: relative;
+  left: 25%;
+  margin-top: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.buttonQuestionDot {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #ba4343;
+  position: relative;
+  left: 25%;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 230px;
+}
+.buttonQuestionDot:hover {
+  background-color: #ba5b5b;
+  box-shadow: 0px 0px 15px 5px #dbc3c3;
+}
+.buttonDot:hover {
+   background-color: #ba5b5b;
+   box-shadow: 0px 0px 15px 5px #dbc3c3;
+}
+.buttonText {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  color: #c9d8f0;
+  font-weight: bold;
+}
+.buttonZoom {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #4354a8;
+  position: relative;
+  left: 25%;
+  margin-top: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.buttonZoom:hover {
+  background-color: #616fb0;
+ box-shadow: 0px 0px 15px 5px #c8cce3;
+}
+.buttonIcon {
+  position: absolute;
+  left: 37%;
+  top: 27%;
+  color: #c9d8f0;
+}
+.heading1 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.02857em;
+  font-weight: 500;
+  padding-left: 2%;
+  position: relative;
+  bottom: 7px;
+  display: inline;
+}
+.selectionMenu {
+  width: 70px;
+  height: 30px;
+  top: 10px;
+  right: 110px;
+  position: absolute;
+  cursor: pointer;
+  display: inline;
+}
+.gettingStartedButton {
+  width: 175px;
+  height: 25px;
+  top: 9.5px;
+  right: 195px;
+  position: absolute;
+  cursor: pointer;
+  display: inline;
+}
+.gettingStarted {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-transform: uppercase;
+  display: inline;
+  letter-spacing: 0.02857em;
+  font-weight: 500;
+}
+.layout {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-transform: uppercase;
+  display: inline;
+  letter-spacing: 0.02857em;
+  font-weight: 500;
+}
+.layoutpopup {
+  top: 40px;
+  right: 70px;
+  z-index: 1101;
+}
+.heading2 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-transform: uppercase;
+  display: inline;
+  letter-spacing: 0.02857em;
+  font-weight: 500;
+  padding-right: 5px;
+}
+.flowchartImage {
+  width: 75%;
+  height: 85%;
+  position: absolute;
+  left: 25%;
+  top: 15%;
+  opacity: 0.1;
+}
+.questionIcon {
+  width: 70px;
+  height: 30px;
+  top: 10px;
+  right: 20px;
+  position: absolute;
+  cursor: pointer;
+  display: inline;
+}
+.canvas {
+  width: 91%; 
+  height: 93%;
+  position: absolute;
+  left: 9%;
+  right: 0;
+  z-index: 10;
+  top: 7%;
+/*  background-color: #e6efff; */
+  background: rgba(0, 24, 64, 0.6);
+}
+.canvas.drawings {
+  opacity: 1.0;
+}
+.drawer .MuiDrawer-paper {
+  top: 7%;
+  background-color: rgba(0, 24, 64, 0.6);
+  border: none;
+}
+.drawer .MuiDrawer-paperAnchorLeft {
+  right: 91%;
+  left: 0;
+}
+.topbar.MuiAppBar-positionFixed {
+  bottom: 93%;
+}
+.topbar.MuiAppBar-colorPrimary {
+  background-color: #364487;
+  opacity: 0.9;
+  color: #c9d8f0;
+}
+.MuiButton-label {
+  color: #c9d8f0;
+}
+.MuiButton-contained:hover {
+  background-color: #4470b8;
+}
+.MuiButton-contained {
+  border: 0px;
+  background-color: #001a45;
+}
+.line {
+  stroke:#939cab;
+  stroke-width:3;
+  z-index: 0; 
+}
+.textfield {
+/*  padding: 10px 10px;*/
+  background-color: #e1dee6;
+  border: none;
+  resize: none;
+  overflow: hidden;
+  font-size: 0.7em;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}

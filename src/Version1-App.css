@@ -1,0 +1,75 @@
+.dot {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%; 
+  fill: url(#grad1);
+/*  background: rgb(139,139,216);*/
+  text-align: center;
+  z-index: 2;
+  cursor: pointer;
+}
+.MuiButton-root {
+  margin-top: 10px;
+}
+.heading {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.02857em;
+  font-weight: 500;
+  padding-left: 2%;
+}
+.canvas {
+  width: 91%; 
+  height: 88%;
+  position: absolute;
+  left: 9%;
+  right: 0;
+  z-index: 10;
+  top: 12%;
+/*  background-color: #e6efff; */
+  background: rgba(41, 54, 130, 0.1);
+}
+.canvas.drawings {
+  opacity: 1.0;
+}
+.drawer .MuiDrawer-paper {
+  top: 12%;
+  background-color: rgba(41, 54, 130, 0.1);
+  opacity: 0.9;
+}
+.drawer .MuiDrawer-paperAnchorLeft {
+  right: 91%;
+  left: 0;
+}
+.topbar.MuiAppBar-positionFixed {
+  bottom: 88%;
+}
+.topbar.MuiAppBar-colorPrimary {
+  background-color: #001a45;
+  opacity: 0.9;
+  color: #c9d8f0;
+}
+.MuiButton-label {
+  color: #c9d8f0;
+}
+.MuiButton-contained:hover {
+  background-color: #4470b8;
+}
+.MuiButton-contained {
+  border: 0px;
+  background-color: #001a45;
+}
+.line {
+  stroke:#939cab;
+  stroke-width:3;
+  z-index: 0; 
+}
+.textfield {
+/*  padding: 10px 10px;*/
+  background-color: #e1dee6;
+  border: none;
+  resize: none;
+  overflow: hidden;
+  font-size: 0.7em;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
