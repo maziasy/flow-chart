@@ -5,7 +5,7 @@ import Button from '@material-ui/core/Button';
 import { StylesProvider } from '@material-ui/styles';
 import AppBar from '@material-ui/core/AppBar';
 import FA from 'react-fontawesome';
-import flowchart from './flowchart.png';
+import flowchart from './flowchart3.png';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
@@ -86,13 +86,12 @@ class App extends React.Component {
 			this.setState({zoomScale: newZoom})
 		}
 	}
-
+/*This function creates new question nodes. More specifically, it */
 	addQuestionNodes() {
 		if(this.state.circleClickedOn != null) {
 			var currentSet = this.state.squareSetIDs 
 			currentSet.add(this.state.circleClickedOn) 
 			var IDs = this.generateNewIDs("question")
-			console.log(IDs)
 			this.adjacencyDict[this.state.circleClickedOn] = IDs
 			this.adjacencyDict[IDs[0]] = [null, null]
 			this.adjacencyDict[IDs[1]] = [null, null]
@@ -264,7 +263,7 @@ class App extends React.Component {
 	}
   		return (
     		<div className="App">
-    			<div className="flowchartImage"><img src={flowchart}/></div>
+    			<div className="flowchartDiv"><img className="flowchartImage" src={flowchart}/></div>
     			<svg className="canvas" onMouseDown={this.dragStart} onMouseMove={this.dragMove} onMouseUp={this.dragEnd}>
     				<g className="drawings" transform={"translate(" + this.state.xOffset + " " + this.state.yOffset + ")"}>
     					<g transform={"scale(" + this.state.zoomScale + ")"}>
@@ -318,8 +317,12 @@ class App extends React.Component {
 						onClose={this.handleClickClose}>
 						<DialogTitle>{"Help"}</DialogTitle>
 						<DialogContent>
-							<DialogContentText>Let Google help apps determine location. This means sending anonymous location data to
-            					Google, even when no apps are running.
+							<DialogContentText>
+								(1) '+': First node that needs to be clicked to create additional question or statement nodes.<br/>
+								(2) 'Q': Creates two question nodes.<br/>
+								(3) 'S': Creates one statement node.<br/>
+								(4) 'Layout': Offers two styles of layout creation.<br/>
+								(5) 'Zoom in/out': Zooms in or out of the flow chart.
             				</DialogContentText>
             			</DialogContent>
             			<DialogActions>
@@ -333,8 +336,8 @@ class App extends React.Component {
 						onClose={this.handleClickShut}>
 						<DialogTitle>{"Getting Started"}</DialogTitle>
 						<DialogContent>
-							<DialogContentText>Let Google help apps determine location. This means sending anonymous location data to
-            					Google, even when no apps are running.
+							<DialogContentText>To get started, first click on the plus sign. Then, click on either 'Q' to create a question node, or 'S' to create a statement node.
+							Clicking on 'Q' creates two additional nodes, while clicking on 'S' creates one additional node. 
             				</DialogContentText>
             			</DialogContent>
             			<DialogActions>
@@ -434,7 +437,7 @@ class Circle extends React.Component {
 			<circle 
 				cx={this.props.cx} 
 				cy={this.props.cy} 
-				r="40" 
+				r="40" H
 				stroke="#adbed9" 
 				stroke-width="2" 
 				className="dot" 
